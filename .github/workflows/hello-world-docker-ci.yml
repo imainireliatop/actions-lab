@@ -14,7 +14,6 @@ jobs:
         with:
           repository: imainireliatop/actions-lab
       - run: ls
-      - run: hello-world-docker-action && ls
 
       - name: Run my own container action
         id: hello-action
