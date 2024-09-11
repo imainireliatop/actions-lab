@@ -11,9 +11,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          repository: imainireliatop/actions-lab
       - run: ls
-      - run: cd /hello-world-docker-action
-      - run: ls
+      - run: hello-world-docker-action && ls
 
       - name: Run my own container action
         id: hello-action
