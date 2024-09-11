@@ -20,7 +20,7 @@ jobs:
     - run: |
         echo "🎉 The job was triggered by event: ${{ github.event_name }}"
         echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ."
-        echo " The name of the environment is ${{ github.events.inputs.environment }} ."
+        echo " The name of the environment is ${{ github.event.inputs.environment }} ."
 
     - uses: actions/checkout@v3.3.0
 
@@ -48,7 +48,7 @@ jobs:
     environment: 
       name: Production
       url: https://writeabout.net
-    if: github.events.inputs.environment == 'Production'
+    if: github.event.inputs.environment == 'Production'
     steps:
       - run: |
           echo "🚀 Step 1..."
