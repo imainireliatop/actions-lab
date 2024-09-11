@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - run: ls
-      - run: cd hello-world-docker-action
+      - run: cd /hello-world-docker-action
       - run: ls
 
       - name: Run my own container action
