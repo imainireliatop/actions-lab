@@ -14,7 +14,7 @@ jobs:
 
       - name: Run my own container action
         id: hello-action
-        uses: imainireliatop/actions-lab/hello-world-docker-action@v1
+        uses: ./hello-world-docker-action
         with:
           who-to-greet: '@wulfland'
 
